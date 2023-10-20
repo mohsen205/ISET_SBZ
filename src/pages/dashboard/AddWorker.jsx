@@ -47,7 +47,7 @@ const AddWorker = () => {
   const onSubmit = (values, { setSubmitting, resetForm }) => {
     const token = localStorage.getItem("id-token");
     axios
-      .post(`${process.env.HTTPS_ENDPOINT}/worker`, values, {
+      .post(`https://isetsbz.azurewebsites.net/worker`, values, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

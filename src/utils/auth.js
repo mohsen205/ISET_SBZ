@@ -22,7 +22,7 @@ const decodeIdToken = idToken => {
 
 const refreshAccessToken = async refreshToken => {
   const response = await axios.post(
-    `${process.env.HTTPS_ENDPOINT}/auth/refresh-token`,
+    `https://isetsbz.azurewebsites.net/auth/refresh-token`,
     {
       refreshToken,
     },

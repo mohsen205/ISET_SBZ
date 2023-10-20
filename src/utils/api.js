@@ -53,9 +53,12 @@ api.interceptors.response.use(
 );
 
 const refreshAccessToken = async refreshToken => {
-  return await axios.post(`${process.env.HTTPS_ENDPOINT}/auth/refresh-token`, {
-    refreshToken,
-  });
+  return await axios.post(
+    `https://isetsbz.azurewebsites.net/auth/refresh-token`,
+    {
+      refreshToken,
+    },
+  );
 };
 
 export default api;

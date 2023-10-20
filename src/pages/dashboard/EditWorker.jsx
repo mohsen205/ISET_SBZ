@@ -63,7 +63,7 @@ const UpdateWorker = () => {
     const token = localStorage.getItem("id-token");
 
     axios
-      .get(`${process.env.HTTPS_ENDPOINT}/worker/${id}`, {
+      .get(`https://isetsbz.azurewebsites.net/worker/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -83,7 +83,7 @@ const UpdateWorker = () => {
     const token = localStorage.getItem("id-token");
 
     axios
-      .put(`${process.env.HTTPS_ENDPOINT}/worker/${id}`, values, {
+      .put(`https://isetsbz.azurewebsites.net/worker/${id}`, values, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -4,10 +4,13 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 export const loginAdmin = createAsyncThunk(
   "auth/login",
   async ({ adminEmail, adminPassword }) => {
-    const response = await axios.post(`${process.env.HTTPS_ENDPOINT}/login`, {
-      email: adminEmail,
-      password: adminPassword,
-    });
+    const response = await axios.post(
+      `https://isetsbz.azurewebsites.net/login`,
+      {
+        email: adminEmail,
+        password: adminPassword,
+      },
+    );
 
     const { _id, email, token } = response.data;
 

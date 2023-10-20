@@ -47,7 +47,7 @@ const Dashboard = () => {
   const handleDelete = rowId => {
     const token = localStorage.getItem("id-token");
     axios
-      .delete(`${process.env.HTTPS_ENDPOINT}/worker/${rowId}`, {
+      .delete(`https://isetsbz.azurewebsites.net/worker/${rowId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -112,7 +112,7 @@ const Dashboard = () => {
     const token = localStorage.getItem("id-token");
 
     axios
-      .get(`${process.env.HTTPS_ENDPOINT}/workers`, {
+      .get(`https://isetsbz.azurewebsites.net/workers`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
