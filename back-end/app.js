@@ -113,4 +113,7 @@ app.get("/workers", adminAuthorization, async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "OK" });
+});
 app.listen(port);
