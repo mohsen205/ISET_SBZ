@@ -68,17 +68,17 @@ const Dashboard = () => {
     });
   };
   const columns = [
-    { field: "idNumber", headerName: "الرقم التعريفي", width: 150 },
+    { field: "idNumber", headerName: "رقم بطاقة التعريف", width: 150 },
     { field: "uidNumber", headerName: "المعرف الوحيد", width: 150 },
     { field: "fullName", headerName: "الاسم الكامل", width: 200 },
-    { field: "class", headerName: "الصف", width: 130 },
-    { field: "domain", headerName: "المجال", width: 150 },
-    { field: "order", headerName: "الترتيب", width: 120 },
+    { field: "class", headerName: "القسم", width: 130 },
+    { field: "domain", headerName: "الاختصاص", width: 150 },
+    { field: "order", headerName: "الرتبة", width: 120 },
     {
       field: "startWorkingDate",
       headerName: "تاريخ المباشرة",
       width: 180,
-      valueFormatter: params => translateDate(params.value), // Use custom translation function
+      valueFormatter: params => translateDate(params.value), 
     },
     { field: "administrativeStatus", headerName: "الوضع الإداري", width: 150 },
     { field: "phoneNumber", headerName: "رقم الهاتف", width: 150 },

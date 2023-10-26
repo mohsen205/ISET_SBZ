@@ -20,11 +20,11 @@ import { useNavigate } from "react-router-dom";
 const pages = [
   {
     link: "",
-    pageName: "قائمة العاملين",
+    pageName:"قائمة العاملين بالمعهد"
   },
   {
     link: "/dashboard/add-worker",
-    pageName: "اضافة عامل",
+    pageName:"إضافة عوان",
   },
 ];
 
